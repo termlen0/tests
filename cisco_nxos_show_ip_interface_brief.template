@@ -1,0 +1,10 @@
+Value INTERFACE (\S+)
+Value IP (\d+\.\d+\.\d+\.\d+)
+Value PROTOCOL (\w+)
+Value STATUS (\w+)
+Value ADMIN (\w+)
+
+
+
+Start
+  ^${INTERFACE}\s+${IP}\s+protocol-${PROTOCOL}+\/+link-${STATUS}+\/+admin-${ADMIN} -> Record
